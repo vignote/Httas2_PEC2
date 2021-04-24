@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "color-no-invalid-hex": true,             <- Para controlar si hemos definido mal un color
+    "font-family-no-duplicate-names": true,   <- Para detectar tipos de letras duplicadas
+    "named-grid-areas-no-invalid":  true,     <- Para detectar fallos a la hora de definir áreas de un grid
+    "length-zero-no-unit": true,              <- Para no incluir unidades de medida para el valor 0
+    "declaration-no-important": true,         <- Para no usar el atributo !important
+    "media-query-list-comma-newline-after": "never-multi-line",  <- Para que la definición del media query sea en una linea
+    "max-empty-lines": 5,              <- Max 5 líneas en blanco para definir secciones distintas del código
+    "max-line-length": 80              <- longitud de línea máxima de 80 caracteres
+  }
+}
