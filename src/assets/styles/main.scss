@@ -6,8 +6,18 @@
 /**
  * Import variables
  */
-
 @import "variables";
+
+/**
+* Import custom bootstrap
+*
+*/
+@import "./custom-bootstrap";
+
+/**
+* Import fontawesome libary
+*/
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 /**
  * Import npm dependencies
@@ -28,5 +38,3 @@
 /**
  * Do NOT include anything else in this file!
  */
-
-@import "bootstrap/scss/bootstrap.scss";

@@ -11,6 +11,11 @@
  */
 import * as bootstrap from "bootstrap";
 
+//Import lobster font
+import "@fontsource/lobster";
+//Import oswald font
+import "@fontsource/oswald";
+
 +(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);

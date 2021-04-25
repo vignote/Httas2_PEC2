@@ -38,6 +38,8 @@
     "stylelint-scss": "^3.19.0"
   },
   "dependencies": {
+    "@fontsource/lobster": "^4.2.2",
+    "@fontsource/oswald": "^4.2.2",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0-beta3"
