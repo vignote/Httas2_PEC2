@@ -4,11 +4,11 @@ $font-family--titles: "Lobster", Roboto, "Helvetica Neue", Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family--body: "Oswald", sans-serif, "Georgia", "Times New Roman", serif;
 
-$page-bg: #000000;
+$page-bg: #000;
 $link-color: #e3b119;
 $font-color: #fff;
 
 $theme-colors: (
   "primary": $link-color,
-  "dark": #000000,
+  "dark": $page-bg,
 );

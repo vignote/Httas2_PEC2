@@ -1,10 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 30px;
+  box-sizing: border-box;
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: $font-family--body;
   background-color: $page-bg;
   color: $font-color;
-  min-height: 100vh;
+  @media screen and (min-width: 765px) {
+    padding: 30px;
+  }
 }
 
 h1,
@@ -26,11 +35,17 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-.main__text {
-  text-align: justify;
+
+img {
+  max-width: 100%;
 }
-.main__footer-picture {
-  width: 100%;
+
+.main-page__band-picture {
+  margin: 0 auto;
+}
+
+.main-page__text {
+  text-align: justify;
 }
 
 .footer__pages {
@@ -53,4 +68,42 @@ footer {
 
 .list-group-horizontal {
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@supports (display: grid) {
+  @media screen and (min-width: 450px) {
+    .main-page {
+      display: grid;
+      min-height: 100vh;
+      grid-template-rows: auto 1fr auto;
+    }
+  }
+
+  .main-page__content {
+    @media screen and (min-width: 765px) {
+      display: grid;
+      gap: 15px;
+      grid-template-areas:
+        "title           title"
+        "band-picture    text"
+        "footer-picture  footer-picture";
+      align-items: start;
+      align-content: space-around;
+    }
+  }
+
+  .main-page__title {
+    grid-area: title;
+  }
+
+  .main-page__band-picture {
+    grid-area: band-picture;
+  }
+  .main-page__text {
+    grid-area: text;
+  }
+  .main-page__footer-picture {
+    grid-area: footer-picture;
+  }
 }
