@@ -66,14 +66,49 @@ img {
   }
 }
 
+.nav__link--active {
+  color: $link-color--active;
+  &:hover {
+    font-weight: normal;
+    color: $link-color--active;
+    cursor: unset;
+  }
+}
+
 .list-group-horizontal {
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.member {
+  flex: 0 1 300px;
+  margin: 5px 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.member__name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.member__position {
+  text-align: center;
+  font-weight: bold;
+  color: $contrast-color;
+}
+
 @supports (display: grid) {
   @media screen and (min-width: 450px) {
-    .main-page {
+    body {
       display: grid;
       min-height: 100vh;
       grid-template-rows: auto 1fr auto;

@@ -6,7 +6,10 @@ $font-family--body: "Oswald", sans-serif, "Georgia", "Times New Roman", serif;
 
 $page-bg: #000;
 $link-color: #e3b119;
+$contrast-color: #dfd97b;
 $font-color: #fff;
+
+$link-color--active: $contrast-color;
 
 $theme-colors: (
   "primary": $link-color,
