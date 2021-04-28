@@ -5,13 +5,21 @@ $font-family--titles: "Lobster", Roboto, "Helvetica Neue", Arial, sans-serif,
 $font-family--body: "Oswald", sans-serif, "Georgia", "Times New Roman", serif;
 
 $page-bg: #000;
+$page-bg-light: #fff;
 $link-color: #e3b119;
 $contrast-color: #dfd97b;
 $font-color: #fff;
+$font-color--dark: #000;
 
 $link-color--active: $contrast-color;
 
 $theme-colors: (
   "primary": $link-color,
+  "secondary": rgb(75, 73, 28),
   "dark": $page-bg,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
 );

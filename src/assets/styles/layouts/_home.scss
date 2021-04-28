@@ -3,11 +3,10 @@ html {
 }
 
 body {
-  margin: 0;
-  box-sizing: border-box;
   padding: 15px;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
   font-family: $font-family--body;
   background-color: $page-bg;
   color: $font-color;
@@ -53,8 +52,8 @@ img {
 }
 
 .nav__link {
-  color: $link-color;
   padding: 5px;
+  color: $link-color;
   &:hover {
     font-weight: bold;
   }
@@ -78,6 +77,16 @@ img {
 .list-group-horizontal {
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.list-group-item-dark {
+  background-color: lighten($color: $page-bg, $amount: 15%);
+  color: darken($color: $font-color, $amount: 30%);
+}
+
+.list-group-item-light {
+  background-color: darken($color: $page-bg-light, $amount: 15%);
+  color: lighten($color: $font-color--dark, $amount: 30%);
 }
 
 .members {
